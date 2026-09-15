@@ -36,7 +36,7 @@ Desenvolver este portfólio me permitiu consolidar conceitos fundamentais de des
 
 Se você quiser conversar sobre desenvolvimento, oportunidades ou colaborar em algum projeto:
 
-- **LinkedIn**: [Seu Link do LinkedIn](www.linkedin.com/in/pedro-renan-lopes-gomes)
+- **LinkedIn**: [Clique Aqui](www.linkedin.com/in/pedro-renan-lopes-gomes)
 
 
 ---

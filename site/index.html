@@ -183,6 +183,13 @@
     border: 1px solid var(--border);
     display:flex; align-items:flex-end; justify-content:center;
     overflow:hidden;
+}
+    .portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit; /* Copia o arredondamento de cantos do quadrado */
+}
   }
   .portrait svg{ width:78%; opacity:0.95; }
   .code-card{
@@ -400,11 +407,7 @@
   <div class="hero-visual">
     <div class="blob" aria-hidden="true"></div>
     <div class="portrait">
-      <svg viewBox="0 0 200 220" aria-hidden="true">
-        <circle cx="100" cy="70" r="42" fill="#2a3358"/>
-        <path d="M40 220 C40 150 65 118 100 118 C135 118 160 150 160 220 Z" fill="#1b2138"/>
-        <rect x="70" y="150" width="60" height="70" rx="10" fill="#10152a"/>
-      </svg>
+      <img src="https://avatars.githubusercontent.com/u/318380852?v=4" alt="Foto de Pedro" class="profile-pic">
     </div>
     <div class="code-card">
       <div class="code-head"><span>&lt;/&gt; code.ts</span><span class="code-dot"></span></div>

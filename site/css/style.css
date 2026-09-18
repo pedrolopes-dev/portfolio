@@ -144,8 +144,8 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; letter-spacing: -
   display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center;
   padding: 76px 32px 96px;
 }
-.hero-text p.lead { color: var(--text-muted); max-width: 46ch; margin: 18px 0 32px; font-size: 1.02rem; }
-.hero-text h1 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); }
+.hero-text p.lead { color: var(--text-muted); max-width: 46ch; margin: 18px 0 32px; font-size: 1.00rem; }
+.hero-text h1 {font-size: clamp(1.0rem, 1.8vw, 1.5rem);}
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 44px; }
 
 .tech-label {

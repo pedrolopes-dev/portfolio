@@ -43,3 +43,27 @@ dots.forEach((dot) => {
     dot.classList.add('active');
   });
 });
+
+// Aguarda o carregamento do DOM
+document.addEventListener('DOMContentLoaded', () => {
+  // Cria o container das faíscas no corpo da página
+  const container = document.createElement('div');
+  container.className = 'lightning-container';
+  document.body.appendChild(container);
+
+  let lastX = 0;
+  let lastY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    // Cria uma faísca a cada movimento significativo do mouse
+    const dist = Math.hypot(e.clientX - lastX, e.clientY - lastY);
+    
+    if (dist > 8) { // Sensibilidade do rastro
+      createShockParticle(e.clientX, e.clientY, container);
+      lastX = e.clientX;
+      lastY = e.clientY;
+    }
+  });
+});
+
+//ANIMAÇÃO DO MOUSE

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<canvas id="space-canvas"></canvas>
 
 <header class="nav">
   <div class="nav-inner container">
@@ -80,6 +81,91 @@
     </div>
   </div>
 </section>
+
+
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Featured projects</span>
+      <h2>Some of My Recent Work</h2>
+    </div>
+    
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-thumb thumb-1"><span class="project-num">01</span></div>
+        <div class="project-body">
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack e-commerce solution with modern UI/UX</p>
+          <a href="#" class="link-arrow">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+      
+      <article class="project-card">
+        <div class="project-thumb thumb-2"><span class="project-num">02</span></div>
+        <div class="project-body">
+          <h3>Task Management App</h3>
+          <p>Collaborative task management application</p>
+          <a href="#" class="link-arrow">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb thumb-3"><span class="project-num">03</span></div>
+        <div class="project-body">
+          <h3>Crypto Dashboard</h3>
+          <p>Real-time cryptocurrency tracking dashboard</p>
+          <a href="#" class="link-arrow">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<!--<section class="cta" id="contact">
+  <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
+    <div class="cta-text">
+      <span class="eyebrow">Vamos trabalhar juntos</span>
+      <h2>Tem algum projeto em mente?</h2>
+      <p>Estou sempre aberto a discutir novos projetos e oportunidades. Vamos criar algo incrível juntos!</p>
+      <a href="mailto:hello@pedrodev.com" class="btn btn-primary">Get In Touch
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+    <blockquote class="testimonial">
+      <svg class="quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h4v6c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7Zm8 0h4v6c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H15V7Z"/></svg>
+      <p>Pedro é um desenvolvedor excepcional que entrega trabalho de alta qualidade dentro do prazo. Sua atenção aos detalhes e capacidade de resolver problemas são excelentes.</p>
+      <div class="testimonial-author">
+        <div class="avatar">SJ</div>
+        <div><strong>Sarah Johnson</strong><span>CEO, TechStart</span></div>
+      </div>
+    </blockquote>
+  </div>
+</section> -->
+
+
+<section class="skills container" id="skills">
+  <div class="section-head center">
+    <span class="eyebrow">My skills</span>
+    <h2>Technologies I Master</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="40" height="40" /><span class="skill-name">HTML</span><span class="skill-pct">95%</span></div><div class="bar"><div class="bar-fill" data-pct="95"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="40" height="40" /><span class="skill-name">TypeScript</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/anthropic/6d5bf5" alt="Node.js" width="40" height="40" /><span class="skill-name">AI prompt engineering</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3" width="40" height="40" /><span class="skill-name">CSS</span><span class="skill-pct">90%</span></div><div class="bar"><div class="bar-fill" data-pct="90"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" width="40" height="40" /><span class="skill-name">Node.js</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/git/F05138" alt="Git" width="40" height="40" /><span class="skill-name">Git</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="40" height="40" /><span class="skill-name">JavaScript</span><span class="skill-pct">90%</span></div><div class="bar"><div class="bar-fill" data-pct="90"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="40" height="40" /><span class="skill-name">TypeScript</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
+    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="40" height="40" /><span class="skill-name">GitHub</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
+  </div>
+</section>
+
+
 
 <section class="about" id="about">
   <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
@@ -169,80 +255,6 @@
   </div>
 </section>
 
-<section class="skills container" id="skills">
-  <div class="section-head center">
-    <span class="eyebrow">My skills</span>
-    <h2>Technologies I Master</h2>
-  </div>
-  <div class="skills-grid">
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="40" height="40" /><span class="skill-name">HTML</span><span class="skill-pct">95%</span></div><div class="bar"><div class="bar-fill" data-pct="95"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="40" height="40" /><span class="skill-name">TypeScript</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/anthropic/6d5bf5" alt="Node.js" width="40" height="40" /><span class="skill-name">AI prompt engineering</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3" width="40" height="40" /><span class="skill-name">CSS</span><span class="skill-pct">90%</span></div><div class="bar"><div class="bar-fill" data-pct="90"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" width="40" height="40" /><span class="skill-name">Node.js</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/git/F05138" alt="Git" width="40" height="40" /><span class="skill-name">Git</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="40" height="40" /><span class="skill-name">JavaScript</span><span class="skill-pct">90%</span></div><div class="bar"><div class="bar-fill" data-pct="90"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="40" height="40" /><span class="skill-name">TypeScript</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
-    <div class="skill"><div class="skill-head"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="40" height="40" /><span class="skill-name">GitHub</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
-  </div>
-</section>
-
-<section class="projects container" id="projects">
-  <div class="section-head center">
-    <span class="eyebrow">Featured projects</span>
-    <h2>Some of My Recent Work</h2>
-  </div>
-  <div class="projects-grid">
-    <article class="project-card">
-      <div class="project-thumb thumb-1"><span class="project-num">01</span></div>
-      <div class="project-body">
-        <h3>E-Commerce Platform</h3>
-        <p>Full-stack e-commerce solution with modern UI/UX</p>
-        <a href="#" class="link-arrow">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      </div>
-    </article>
-    <article class="project-card">
-      <div class="project-thumb thumb-2"><span class="project-num">02</span></div>
-      <div class="project-body">
-        <h3>Task Management App</h3>
-        <p>Collaborative task management application</p>
-        <a href="#" class="link-arrow">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      </div>
-    </article>
-    <article class="project-card">
-      <div class="project-thumb thumb-3"><span class="project-num">03</span></div>
-      <div class="project-body">
-        <h3>Crypto Dashboard</h3>
-        <p>Real-time cryptocurrency tracking dashboard</p>
-        <a href="#" class="link-arrow">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      </div>
-    </article>
-  </div>
-  <div class="dots">
-    <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
-  </div>
-</section>
-
-<section class="cta" id="contact">
-  <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
-    <div class="cta-text">
-      <span class="eyebrow">Vamos trabalhar juntos</span>
-      <h2>Tem algum projeto em mente?</h2>
-      <p>Estou sempre aberto a discutir novos projetos e oportunidades. Vamos criar algo incrível juntos!</p>
-      <a href="mailto:hello@pedrodev.com" class="btn btn-primary">Get In Touch
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-      </a>
-    </div>
-    <blockquote class="testimonial">
-      <svg class="quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h4v6c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H7V7Zm8 0h4v6c0 3-2 5-5 5v-2c1.5 0 2.5-1 2.5-2.5H15V7Z"/></svg>
-      <p>Pedro é um desenvolvedor excepcional que entrega trabalho de alta qualidade dentro do prazo. Sua atenção aos detalhes e capacidade de resolver problemas são excelentes.</p>
-      <div class="testimonial-author">
-        <div class="avatar">SJ</div>
-        <div><strong>Sarah Johnson</strong><span>CEO, TechStart</span></div>
-      </div>
-    </blockquote>
-  </div>
-</section>
 
 <footer class="footer">
   <div class="footer-inner container">

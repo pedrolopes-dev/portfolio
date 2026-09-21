@@ -305,28 +305,67 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; letter-spacing: -
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(4px);
 }
-.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+.projects-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 28px; 
+}
+
 .project-card {
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
-  overflow: hidden; transition: transform .2s ease, border-color .2s ease;
+  background: var(--surface); 
+  border: 1px solid var(--border); 
+  border-radius: var(--radius-lg);
+  overflow: hidden; 
+  transition: transform .2s ease, border-color .2s ease;
   backdrop-filter: blur(8px);
 }
-.project-card:hover { transform: translateY(-4px); border-color: rgba(34,211,238,0.4); }
-.project-thumb {
-  position: relative; aspect-ratio: 16/11;
-  display: flex; align-items: flex-start; padding: 16px;
+
+.project-card:hover { 
+  transform: translateY(-4px); 
+  border-color: rgba(34,211,238,0.4); 
 }
+
+/* Área da thumb ajustada para receber a imagem e manter o número por cima */
+.project-thumb {
+  position: relative; 
+  overflow: hidden; 
+  aspect-ratio: 16/11;
+  width: 100%;
+}
+
+/* Regra para a imagem se ajustar perfeitamente ao container */
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .thumb-1 { background: linear-gradient(135deg, rgba(12, 43, 54, 0.7), rgba(8, 24, 32, 0.7)); }
 .thumb-2 { background: linear-gradient(135deg, rgba(233, 236, 251, 0.2), rgba(199, 205, 247, 0.2)); }
 .thumb-3 { background: linear-gradient(135deg, rgba(12, 18, 32, 0.7), rgba(16, 26, 44, 0.7)); }
+
+/* Número posicionado em relação ao container pai (project-thumb) */
 .project-num {
-  font-family: var(--font-head); font-weight: 700; font-size: 0.78rem;
-  color: rgba(255,255,255,0.8); background: rgba(0,0,0,0.5);
-  padding: 4px 10px; border-radius: 999px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  font-family: var(--font-head); 
+  font-weight: 700; 
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.8); 
+  background: rgba(0,0,0,0.5);
+  padding: 4px 10px; 
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
 }
+
 .project-body { padding: 22px 22px 26px; }
 .project-body h3 { font-size: 1.08rem; margin-bottom: 6px; }
 .project-body p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px; }
+
 .link-arrow { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.88rem; color: var(--accent-1); }
 .link-arrow svg { width: 14px; height: 14px; transition: transform .15s ease; }
 .link-arrow:hover svg { transform: translate(2px,-2px); }
